@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <title>Hello!</title>
-    <script>
-    function hello() {
-        document.querySelector('h1').innerHTML = 'Goodbye!';
-    }
+        <title>Hello!</title>
+        <script>
+        function hello() {
+            if (document.querySelector("h1").innerHTML === "Hello!") {
+                document.querySelector("h1").innerHTML = "Goodbye!";
+            } else {
+                document.querySelector("h1").innerHTML = "hello!"
+            }
+        }
+        
         </script>
-    </head>
-    <body>
-        <h1>Goodbye!</h1>
-        <button onclick="hello()">Click Here</button>
-</body>
-</html>
+        </head>
+        <body>
+            <h1>Goodbye!</h1>
+            <button onclick="hello()">Click Here</button>
+        </body>
+        </html>

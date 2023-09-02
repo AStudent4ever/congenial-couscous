@@ -2,11 +2,32 @@
 <html lang="en">
     <head>
         <title>Color</title>
+        <script>
+
+            document.addEventListener("DOMContentLoaded", function() {
+           
+                document.querySelector("#red").onclick = function() {
+                    document.querySelector("#hello").style.color = "red";
+                }
+                
+                document.querySelector("#blue").onclick = function() {
+                    document.querySelector("#hello").style.color = "blue";
+                }
+                
+                document.querySelector("#green").onclick = function() {
+                    document.querySelector("#hello").style.color = "green";
+                }
+            
+            
+            
+            });
+
+        </script>
     </head>
     <body>
         <h1 id="hello">Hello!</h1>
-        <button>Red</button>
-        <button>Blue</button>
-        <button>Green</button>
+        <button id="Red">Red</button>
+        <button id="Blue">Blue</button>
+        <button id="Green">Green</button>
     </body>
 </html>

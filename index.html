@@ -1,21 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Hello!</title>
-        <script>
-        
-            function hello() {
-                if (document.querySelector("h1").innerHTML === "Hello!") {
-                    document.querySelector("h1").innerHTML = "Goodbye!";
-                } else {
-                    document.querySelector("h1").innerHTML = "hello!";
-                }
-            }
-        
-        </script>
-        </head>
-        <body>
-            <h1>Goodbye!</h1>
-            <button onclick="hello()">Click Here</button>
-        </body>
-        </html>
+<!DOCTYPE html>      
+<html lang="en"><head>
+    <title>Hello!</title>
+    <script>
+    function hello() {
+        const heading = document.querySelector('h1');
+        if (heading.innerHTML === 'Hello!') {
+            heading.innerHTML = 'Goodbye!';
+        } else {
+            heading.innerHTML = 'Hello!';
+        }
+    }
+    </script>
+    </head>
+    <body>
+        <h1>Hello!</h1>
+        <button onclick="hello()">Click Here</button>  
+    </body>
+    </html>
